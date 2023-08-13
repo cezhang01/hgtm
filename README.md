@@ -45,7 +45,7 @@ We release ML, PL, COVID, and Aminer datasets in `./data` folder. For Aminer dat
 
 Each dataset contains contents, links, vocabulary, pretrained glove word embeddings, labels, and label names.
 
-- contents: each row corresponds to a document, containing a sequence of words represented by word IDs in vocabulary. Word ID starts from 0. For example, a row with `[0, 6, 4]` means a document with a sequence of three words, i.e., the 0th, 6th, and 4th words in the vocabulary.
+- contents: each row corresponds to a document, containing a sequence of words represented by word IDs in vocabulary. Word ID starts from 0. For example, a row with `[0, 6, 4]` means a document with a sequence of three words, i.e., the 0th, 6th, and 4th words in the vocabulary. There are N rows (N documents) in total.
 - links: each row corresponds to a link represented by a pair of document IDs. For example, a row  with `[5, 8]` means a link from document 5 to document 8.
 - voc (|V|x1): vocabulary.
 - pretrained glove word embeddings (|V|x300): 300-dimensional pretrained glove word embeddings, with each row corresponding to a word in the vocabulary. For example, the 0th word embedding corresponds to the 0th word in the vocabulary.
@@ -55,7 +55,7 @@ Each dataset contains contents, links, vocabulary, pretrained glove word embeddi
 ## Output
 We output three files for each training. Output results are saved to the `./dataset_name/results` folder.
 
-- doc_emb.txt (NxH): each row is an H-dimensional document embedding. The first 80% embeddings are for training documents, and the remaining 20% embeddings are for testing documents. These document embeddings can fulfill downstream tasks, including text classification and graph link prediction.
+- doc_emb.txt (NxH): each row is an H-dimensional document embedding. There are N documents in total. The first 80% embeddings are for training documents, and the remaining 20% embeddings are for testing documents. These document embeddings can fulfill downstream tasks, including text classification and graph link prediction.
 - topic_emb.txt (KxH): each row is an H-dimensional topic embedding.
 - topic_word_dist.txt (Kx|V|): topic-word distribution, where each row is a probability distribution over the whole vocabulary. This topic-word distribution can fulfill topic analysis tasks, including topic coherence.
 
