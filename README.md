@@ -8,7 +8,7 @@ HGTM is a topic model designed for interconnected texts in a graph structure, su
 - pytorch == 2.0.0
 - numpy == 1.20.3
 
-- ## Run
+## Run
 `python main.py -s False`  # unsupervised training
 
 `python main.py -s True`   # supervised training
