@@ -1,0 +1,9 @@
+compiler_design
+debugging
+functional
+garbage_collection
+java
+logic
+object_oriented
+semantics
+software_development

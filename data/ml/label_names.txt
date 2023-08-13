@@ -1,0 +1,7 @@
+case-based
+genetic_algorithms
+neural_networks
+probabilistic_methods
+reinforcement_learning
+rule_learning
+theory
