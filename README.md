@@ -1,5 +1,5 @@
 # HGTM
-This is the pytorch implementation of KDD-2023 paper "[Hyperbolic Graph Topic Modeling Network with Continuously Updated Topic Tree](/papers/KDD23-HGTM.pdf)" by [Delvin Ce Zhang](http://delvincezhang.com/), [Rex Ying](https://www.cs.yale.edu/homes/ying-rex/), and [Hady W. Lauw](http://www.hadylauw.com/home).
+This is the pytorch implementation of KDD-2023 paper "[Hyperbolic Graph Topic Modeling Network with Continuously Updated Topic Tree](/paper/KDD23-HGTM.pdf)", authored by [Delvin Ce Zhang](http://delvincezhang.com/), [Rex Ying](https://www.cs.yale.edu/homes/ying-rex/), and [Hady W. Lauw](http://www.hadylauw.com/home).
 
 HGTM is a topic model designed for interconnected texts in a graph structure, such as academic citation graphs and Webpage hyperlink graphs. HGTM learns text embeddings with the aim of preserving both hierarchical graph connectivity and hierarchical topic structure within textual content. The learned text embeddings can fulfill downstream tasks, inclduing text classification, graph link prediction, and topic analysis.
 
