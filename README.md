@@ -23,6 +23,7 @@ HGTM is a topic model designed for interconnected texts in a graph structure, su
 - -reg_s: regularizer for MLP classifier in supervised training, default = 1 ($\lambda_{label}$ in the paper. If the above -s is set to False, this -reg_s can be ignored.)
 - -reg_text: regularizer for text generation, default = 0.1 ($\lambda_{text}$ in the paper)
 - -tr: training ratio, the ratio of training documents to the total documents, default = 0.8
+- -m: manifold, PoincareBall or Hyperboloid, default = PoincareBall
 - -le: log epochs, how many epochs should the model output results on testing documents, default = 25 (set 25 for small datasets (ml, pl, covid), and 1 for large datasets (aminer and web))
 - -nl: number of graph convolutional layers, default = 2
 - -nn: number of sampled neighbors for aggregation, default = 5
@@ -32,8 +33,8 @@ HGTM is a topic model designed for interconnected texts in a graph structure, su
 - -ut: if the model updates the topic tree during training, default = True
 - -max_l: maximum number of levels for topic tree, default = 4
 - -max_c: maximum number of children a parent topic has, default = 20
-- -at: threshold of adding a new topic, default = 0.05
-- -rt: thrshold of remving a topic, default = 0.05
+- -at: threshold of adding a new topic on the tree, default = 0.05
+- -rt: thrshold of removing a topic on the tree, default = 0.05
 - -we: if the model uses pretrained word embeddings for decoding, default = False
 - -rs: random seed
 - -gpu: gpu
